@@ -1,9 +1,12 @@
-## Data Cleaning of Epidemiological Aging Data USA 2014
+## Data Cleaning and Visualization of Epidemiological Aging Data USA 2014
 
 ![Obesity](https://user-images.githubusercontent.com/121974615/211625772-1f1c0b8b-52ac-4116-a83f-7f0da6ffe4ee.gif)
 
 I found a dataset online (rows.csv) that is a very disorganized spreadsheet depicting different territories in the USA, and several variables measured from their older populations.
-This was a great excesize for translating and rearranging the dataframe in pandas.
+This was a great excesize for translating and rearranging the dataframe in pandas, and visualizing using more advanced method in ggplot2 in R.
+
+## Data Cleaning
+First, I loaded the dataset into python.
 ```python
 # import pandas lib as pd
 import pandas as pd
