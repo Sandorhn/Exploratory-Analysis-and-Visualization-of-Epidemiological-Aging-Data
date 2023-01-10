@@ -1,4 +1,4 @@
-## Data Cleaning and Visualization of Epidemiological Aging Data USA 2014
+## Data Cleaning of Epidemiological Aging Data USA 2014
 
 I found a dataset online (rows.csv) that is a very disorganized spreadsheet depicting different territories in the USA, and several variables measured from their older populations.
 This was a great excesize for translating and rearranging the dataframe in pandas.
@@ -88,6 +88,7 @@ df2014_60i = pd.DataFrame(df2014_60["Data_Value"].to_numpy().reshape(len(df2014_
 df2014_65i = pd.DataFrame(df2014_65["Data_Value"].to_numpy().reshape(len(df2014_65.Topic.unique()),len(df2014_65.NewColumn.unique())).T,index = df2014_65.NewColumn.unique(),columns = df2014_65.Topic.unique())
 ```
 ![tidy and graphable](https://user-images.githubusercontent.com/121974615/211614892-21953422-65af-403e-a9b9-273bd37218d2.PNG)
+
 Finally, the reshaped dataframes were exported for visualization.
 ```python
 df2011_50i.to_csv(r'C:/Users/Sandor/Desktop/EMPLOYMENT/Aging Projects/Data Analysis Aging Study/Data4visualization/df2011_50i.csv')
